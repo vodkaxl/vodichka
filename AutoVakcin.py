@@ -11,13 +11,17 @@ class AutoVakcin(loader.Module):
         self.db = db
 
     async def vakcincmd(self, message): 
-		".vakcin"
+		"""Активировать авто покупку вакцины"""
+        await message.edit("Включено")
+        filters = self.db.get("Filters", "filters", {})
         key = utils.get_args_raw(у вас горячка) # .lower()
         reply = await message.get_reply_message(.купить вакцину) 
         chatid = str(message.chat_id)
+        await asyncio.sleep(5)
 
 async def stopvakccmd(self, message):
-        ".stopvakc"
+        """Остановить авто покупку вакцины"""
+        await message.edit("Остановлено")
         filters = self.db.get("autovakcin", "autovakcin", {})
         chatid = str(message.chat_id)
 
