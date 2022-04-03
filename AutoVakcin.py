@@ -13,7 +13,7 @@ class AutoVakcin(loader.Module):
     async def vakcincmd(self, message): 
 		"""Активировать авто покупку вакцины"""
         await message.edit("Включено")
-        filters = self.db.get("Filters", "filters", {})
+        filters = self.db.get("AutoVakcin", "autovakcin", {})
         key = utils.get_args_raw(у вас горячка) # .lower()
         reply = await message.get_reply_message(.купить вакцину) 
         chatid = str(message.chat_id)
