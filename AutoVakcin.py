@@ -3,7 +3,7 @@ from .. import loader, utils
 
 @loader.tds
 class FiltersMod(loader.Module):
-    """Фильтры"""
+    """Вакцина"""
     strings = {"name": "Filters"}
 
     async def client_ready(self, client, db):
