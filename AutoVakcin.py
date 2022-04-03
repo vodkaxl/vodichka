@@ -10,15 +10,15 @@ class AutoVakcin(loader.Module):
     async def client_ready(self, client, db):
         self.db = db
 
-    async def filtercmd(self, message):
-        """Включить покупку вакцины"""
-        filters = self.db.get("Filters", "filters", {})
-        key = utils.get_args_raw(.купить вакцину) # .lower()
-        reply = await message.get_reply_message() 
+    async def vakcincmd(self, message):
+        async def getidcmd(self, message):
+		".vakcin"
+        key = utils.get_args_raw(у вас горячка) # .lower()
+        reply = await message.get_reply_message(.купить вакцину) 
         chatid = str(message.chat_id)
 
 async def stopallcmd(self, message):
-        """Отключить покупку вакцин"""
+        ".stopvakc"
         filters = self.db.get("Filters", "filters", {})
         chatid = str(message.chat_id)
 
