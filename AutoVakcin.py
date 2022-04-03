@@ -1,10 +1,11 @@
 from .. import loader, utils
+import asyncio
 
 
 @loader.tds
-class FiltersMod(loader.Module):
+class AutoVakcin(loader.Module):
     """Вакцина"""
-    strings = {"name": "Filters"}
+    strings = {"name": "AutoVakcin"}
 
     async def client_ready(self, client, db):
         self.db = db
